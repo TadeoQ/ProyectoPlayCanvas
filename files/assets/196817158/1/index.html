@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto RA</title>
+    <style>
+        #rotateButton, #changeColorButton {
+            position: absolute;
+            top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            z-index: 100; /* Asegúrate de que los botones estén encima del canvas */
+        }
+
+        #rotateButton {
+            left: 20px;
+        }
+
+        #changeColorButton {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="rotateButton">Rotate</button>
+    <button id="changeColorButton">Change Color</button>
+
+    <!-- Incluye el script de PlayCanvas -->
+    <script src="https://code.playcanvas.com/playcanvas-stable.min.js"></script>
+    <!-- Incluye tu script personalizado -->
+    <script src="rotar.js"></script>
+</body>
+</html>
